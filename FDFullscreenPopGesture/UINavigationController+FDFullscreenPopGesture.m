@@ -46,7 +46,7 @@
     
     // Ignore when the beginning location is beyond max allowed initial distance to left edge.
     CGPoint beginningLocation = [gestureRecognizer locationInView:gestureRecognizer.view];
-    CGFloat maxAllowedInitialDistance = topViewController.fd_interactivePopMaxAllowedInitialDistanceToLeftEdge;
+    CGFloat maxAllowedInitialDistance = 50;
     if (maxAllowedInitialDistance > 0 && beginningLocation.x > maxAllowedInitialDistance) {
         return NO;
     }
